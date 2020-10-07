@@ -13,7 +13,7 @@
     background-color: #f2f2f2;
     }
     h1 {
-      color:#545454;
+      color:#e64e4e;
       text-align: center;
       font-family: helvetica;
       padding-bottom:1cm;
@@ -31,18 +31,26 @@
     }
     p {
       text-align: center;
-      margin:0 auto;
+      color:#545454;
+      border-style: solid;
+      border-width: 10px;
+    }
+    .keyword {
+      color: #e64e4e;
     }
   </style>
 </head>
 <body>
-  <h1 id="heading1">Fatal Traffic Accidents Between 2014 And 2019</h1>
+  <h1 id="heading1"> Fatal Traffic Accidents Between 2014 And 2019</h1>
   
   <div class="container">
     <p>Information about all fatal traffic accidents in Victoria between 2014 and 2019 were recorded. A total of 1358 fatal accidents occured in this time period </p>
   </div>
   
-  <h3>Overview of Fatal Traffic Accidents by Gender</h3>
+  <h3>
+    <span class="keyword">Overview</span>
+    of Fatal Traffic Accidents by Gender
+  </h3>
   <div id="vis1" class = "center"></div>
 
   <script type="text/javascript">
