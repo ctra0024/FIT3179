@@ -43,8 +43,11 @@
       border-color: #961111;
       background-color: white;
     }
-    .keyword {
+    .mainkeyword {
       color: #961111;
+      font-weight: bold;
+    }
+    .keyword {
       font-weight: bold;
     }
     a {
@@ -59,14 +62,14 @@
   <div class = "container">
     <p>All fatal traffic accidents in Victoria between the years 2014 and 2019 were recorded.
       Information regarding accident location, individuals involved and details about how the accident occurred were noted and provided by VicRoads.
-      A total of 1358 fatal accidents occured during this time period.<br>
+      A total of <span class="keyword">1358</span> fatal accidents occured during this time period.<br>
       <br><a href="https://discover.data.vic.gov.au/dataset/fatal-crashes-lives-lost-last-5-years-to-date1">Click here to access data source</a>
       <br><a href="http://data.vicroads.vic.gov.au/metadata/Fatal_Crashes.html">Click here to view full metadata for data source</a>
     </p>
   </div>
   
   <h3>
-    <span class="keyword">Overview</span>
+    <span class="mainkeyword">Overview</span>
     of Fatal Traffic Accidents by Gender
   </h3>
   <div id="vis1" class = "center"></div>
