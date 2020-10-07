@@ -8,21 +8,28 @@
   <!-- Import vega-embed -->
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
   <style>
+    body {
     background-color: lightgrey;
+    }
     h1 {
       text-align: center;
       font-family: verdana;
+    }
+    div.vis1 {
+    width: 300px;
+    padding: 25px;
+    background-color: lightblue;
     }
   </style>
 </head>
 <body>
   <h1 id="heading1">Fatal Traffic Accidents Between 2014 And 2019</h1>
 
-  <div id="vis"></div>
+  <div id="vis1"></div>
 
   <script type="text/javascript">
     var spec = "https://ctra0024.github.io/FIT3179/stacked_and_line_overview.json";
-    vegaEmbed('#vis', spec).then(function(result) {
+    vegaEmbed('#vis1', spec).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
   </script>
