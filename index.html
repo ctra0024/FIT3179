@@ -13,10 +13,9 @@
   <h1 id="heading1" style="font-family: Arial">Fatal Traffic Accidents Between 2014 And 2019</h1>
   </center>
 
-  <div id="vis"></div>
+  <div id="vis" style="padding-right: 20px; padding left: 20px;"></div>
 
   <script type="text/javascript">
-    var opt = {padding: left: 5, top: 5, right: 5, bottom: 5};
     var spec = "https://ctra0024.github.io/FIT3179/stacked_and_line_overview.json";
     vegaEmbed('#vis', spec, opt).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
