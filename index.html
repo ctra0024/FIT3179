@@ -24,7 +24,7 @@
       color:#545454;
       padding-left: 150px;
       font-family: arial;
-      font-size: 22px;
+      font-size: 200%;
       padding-top:25px;
     }
     #vis1 {
@@ -57,9 +57,20 @@
     }
     .grid-item {
      background-color: white;
-      height: 50%;
-      width: 50%;
+      margin-left: 150px;
+      margin-right: 150px;
       margin: 0 auto;
+    }
+    .card-container {
+      background-color: white;
+      margin-left: 150px;
+      margin-right: 150px;
+      margin: 0 auto;
+    }
+    .card-stat {
+      margin: 0 auto;
+      font-size: 22px;
+      font-family: arial;
     }
     
   </style>
@@ -88,6 +99,20 @@
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
   </script>
+  
+  <div class="card-container">
+    <div class="card-stat">
+      % of Accidents involving Female Drivers:<br>
+      <span class="mainkeyword">27.84%</span>
+    </div>
+    <div class="card-stat">
+      % of Accidents involving Male Drivers:<br>
+      <span class="mainkeyword">72.16%</span>
+    </div>
+    <div class="text">
+      placeholder text for visualisation 2
+    </div>
+  </div> 
   
   <div class="grid-container">
     <div class="grid-item">
