@@ -36,6 +36,8 @@
     #vis2 {
     display: flex;
     justify-content: center;
+    margin-left: 150px;
+    margin-right: 150px;
     }
     .text {
       margin-left: 150px;
@@ -86,7 +88,7 @@
     .card-text {
       color: #961111;
       font-weight: bold;
-      font-size: 22px;
+      font-size: 48px;
     }
     
   </style>
@@ -108,7 +110,31 @@
     of Fatal Traffic Accidents
   </h3>
   <div id="vis1"></div>
-
+  
+  <div class="card-container">
+    <div class="card">
+      % of Accidents involving Female Drivers:<br><br>
+      <span class="card-text">27.84%</span>
+    </div>
+    <div class="card">
+      % of Accidents involving Male Drivers:<br><br>
+      <span class="card-text">72.16%</span>
+    </div>
+   </div>
+  
+  <div class = "text">
+    <p>There was an overall decrease in the number of fatal traffic accidents from 2014 to 2019, however the number of fatal traffic accidents by gender
+    </p>
+  </div>
+  
+  <h3>
+    <span class="mainkeyword">Accident Types</span>
+    by Victim Road User Types
+  </h3>
+  
+  <div id="vis2"></div>
+  
+  
   <script type="text/javascript">
     var spec1 = "https://ctra0024.github.io/FIT3179/overview.json";
     vegaEmbed('#vis1', spec1).then(function(result) {
@@ -120,24 +146,6 @@
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
   </script>
-  
-  <div class="card-container">
-    <div class="card">
-      % of Accidents involving Female Drivers:<br>
-      <span class="card-text">27.84%</span>
-    </div>
-    <div class="card">
-      % of Accidents involving Male Drivers:<br>
-      <span class="card-text">72.16%</span>
-    </div>
-   </div>
-  
-  <h3>
-    <span class="mainkeyword">Accident Types</span>
-    by Victim Road User Types
-  </h3>
-  
-  <div id="vis2"></div>
   
 </body>
 </html>
