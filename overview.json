@@ -1370,12 +1370,14 @@
           "field": "Accident Date",
           "type": "temporal",
           "timeUnit": "year",
-          "title": "Year"
+          "title": "Year",
+          "axis": {"titleFontSize": 13, "labelFontSize": 13}
         },
         "y": {
           "aggregate": "count",
           "field": "Accident Date",
-          "title": "Number of Accidents"
+          "title": "Number of Accidents",
+          "axis": {"titleFontSize": 13, "labelFontSize": 13}
         },
         "color": {"value": "#961111"}
       }
@@ -1389,11 +1391,18 @@
           "type": "temporal",
           "title": "Year"
         },
-        "x": {"field": "Gender", "axis": {"title": ""}},
+        "x": {
+          "field": "Gender",
+          "axis": {
+            "title": "",
+            "labelFontSize": 12
+          }
+        },
         "y": {
           "aggregate": "count",
           "field": "Accident Date",
-          "title": "Number of Accidents"
+          "title": "Number of Accidents",
+          "axis": {"titleFontSize": 13, "labelFontSize": 12}
         },
         "color": {"field": "Gender", "scale": {"range": ["#961111", "#db8721"]}}
       }
@@ -1401,13 +1410,26 @@
     {
       "mark": "line",
       "encoding": {
-        "x": {"field": "Accident Date", "timeUnit": "year", "type": "temporal"},
+        "x": {
+          "field": "Accident Date",
+          "timeUnit": "year",
+          "type": "temporal",
+          "axis": {"titleFontSize": 13, "labelFontSize": 13}
+        },
         "y": {
           "aggregate": "count",
           "field": "Accident Date",
-          "title": "Number of Accidents"
+          "title": "Number of Accidents",
+          "axis": {"titleFontSize": 13, "labelFontSize": 13}
         },
-        "color": {"field": "Gender", "scale": {"range": ["#961111", "#db8721"]}}
+        "color": {
+          "field": "Gender",
+          "scale": {"range": ["#961111", "#db8721"]},
+          "legend": {
+            "titleFontSize": 13,
+            "labelFontSize": 13
+          }
+        }
       }
     }
   ],
