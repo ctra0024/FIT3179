@@ -57,19 +57,23 @@
      color: #961111; 
      font-size: 14px;
     }
+    .card-container {
+     padding-top: 15px;
+     padding-bottom: 15px;
+     margin-left: 150px;
+     margin-right: 150px;
+    }
     .card {
       background-color: white;
       padding-top: 15px;
       padding-bottom: 15px;
-      top: 100px;
       width: 25%;
       height: 25%;
-      position: relative;
+      display: inline-block;
       text-align: center;
       font-weight: bold;
       font-size: 22px;
       font-family: arial;
-      
     }
     .card-text {
       color: #961111;
@@ -104,14 +108,16 @@
     }).catch(console.error);
   </script>
   
-  <div class="card">
-    % of Accidents involving Female Drivers:<br>
-    <span class="card-text">27.84%</span>
-  </div>
-  <div class="card">
-    % of Accidents involving Male Drivers:<br>
-    <span class="card-text">72.16%</span>
-  </div>
+  <div class="card-container">
+    <div class="card">
+      % of Accidents involving Female Drivers:<br>
+      <span class="card-text">27.84%</span>
+    </div>
+    <div class="card">
+      % of Accidents involving Male Drivers:<br>
+      <span class="card-text">72.16%</span>
+    </div>
+   </div>
   
 </body>
 </html>
