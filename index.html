@@ -99,13 +99,18 @@
   
   <h3>
     <span class="mainkeyword">Overview</span>
-    of Fatal Traffic Accidents by Gender
+    of Fatal Traffic Accidents
   </h3>
   <div id="vis1"></div>
 
   <script type="text/javascript">
-    var spec = "https://ctra0024.github.io/FIT3179/overview.json";
-    vegaEmbed('#vis1', spec).then(function(result) {
+    var spec1 = "https://ctra0024.github.io/FIT3179/overview.json";
+    vegaEmbed('#vis1', spec1).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    
+    var spec2 = "https://ctra0024.github.io/FIT3179/stacked-bar-chart.json";
+    vegaEmbed('#vis2', spec2).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
   </script>
@@ -120,6 +125,8 @@
       <span class="card-text">72.16%</span>
     </div>
    </div>
+  
+  <div id="vis2"></div>
   
 </body>
 </html>
