@@ -1364,8 +1364,6 @@
   },
   "hconcat": [
     {
-      "width": 425,
-      "height": 300,
       "mark": "bar",
       "encoding": {
         "x": {
@@ -1383,8 +1381,6 @@
       }
     },
     {
-      "width": 60,
-      "height": 300,
       "mark": "bar",
       "encoding": {
         "column": {
@@ -1395,22 +1391,17 @@
         },
         "x": {"field": "Gender", "axis": {"title": ""}},
         "y": {
-          "aggregate": "count", "field": "Accident Date",
+          "aggregate": "count",
+          "field": "Accident Date",
           "title": "Number of Accidents"
         },
         "color": {"field": "Gender", "scale": {"range": ["#961111", "#db8721"]}}
       }
     },
     {
-      "width": 400,
-      "height": 300,
       "mark": "line",
       "encoding": {
-        "x": {
-          "field": "Accident Date",
-          "timeUnit": "year",
-          "type": "temporal"
-        },
+        "x": {"field": "Accident Date", "timeUnit": "year", "type": "temporal"},
         "y": {
           "aggregate": "count",
           "field": "Accident Date",
