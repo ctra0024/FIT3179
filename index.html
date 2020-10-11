@@ -39,6 +39,12 @@
     margin-left: 150px;
     margin-right: 150px;
     }
+    #vis3 {
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    }
     .text {
       margin-left: 150px;
       margin-right: 150px;
@@ -79,6 +85,7 @@
       width: 30%;
       height: 30%;
       margin: auto;
+      margin-bottom: 25px;
       display: inline-block;
       text-align: center;
       font-weight: bold;
@@ -113,12 +120,12 @@
   
   <div class="card-container">
     <div class="card">
-      % of Accidents involving Female Drivers:<br><br>
       <span class="card-text">27.84%</span>
+      % of Accidents involving Female Drivers<br><br>
     </div>
     <div class="card">
-      % of Accidents involving Male Drivers:<br><br>
       <span class="card-text">72.16%</span>
+      % of Accidents involving Male Drivers<br><br>
     </div>
    </div>
   
@@ -134,6 +141,13 @@
   
   <div id="vis2"></div>
   
+  <h3>
+    <span class="mainkeyword">Average Ages</span>
+    of Fatal Traffic Accidents by Gender
+  </h3>
+  
+  <div id="vis3"></div>
+  
   
   <script type="text/javascript">
     var spec1 = "https://ctra0024.github.io/FIT3179/overview.json";
@@ -143,6 +157,11 @@
     
     var spec2 = "https://ctra0024.github.io/FIT3179/stacked-bar-chart.json";
     vegaEmbed('#vis2', spec2).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    
+    var spec3 = "https://ctra0024.github.io/FIT3179/average-age-by-gender.json";
+    vegaEmbed('#vis3', spec3).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
   </script>
