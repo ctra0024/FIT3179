@@ -2680,9 +2680,9 @@
           "Pillion Passengers"
         ],
         "range": [
-          "#d63c3c",
+          "#ed5353",
           "#cc7614",
-          "#421212",
+          "#d10000",
           "#961111",
           "#f5ce20",
           "#402121"
@@ -2692,7 +2692,5 @@
       "legend": {"orient": "top"}
     }
   },
-  "config": {
-    "background": "#f2f2f2"
-  }
+  "config": {"background": "#f2f2f2"}
 }
