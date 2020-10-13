@@ -6827,5 +6827,5 @@
       "legend": null
     }
   },
-  "config": {}
+  "config": {"background": "#F2F2F2"}
 }
