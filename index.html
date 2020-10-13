@@ -7,7 +7,7 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
   <!-- Import vega-embed -->
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-  <!-- Import pure.css-->
+  <!-- Import pure.css -->
   <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -128,13 +128,14 @@
     of Fatal Traffic Accidents
   </h3>
   
-  <div id="vis1" class="vis-container"></div>
- 
-  <div class = "text">
-    <p>There was an overall decrease in the number of fatal traffic accidents from 2014 to 2019, however the number of fatal traffic accidents by gender
-    </p>
+  <div class="vis-container">
+    <div id="vis1"</div>
+    <div class = "text">
+      <p>There was an overall decrease in the number of fatal traffic accidents from 2014 to 2019, however the number of fatal traffic accidents by gender
+      </p>
+    </div>
   </div>
-  
+
    <div class="card-container">
     <div class="card">
       <br><span class="card-text">27.84%</span><br><br>
@@ -163,7 +164,7 @@
   
   <script type="text/javascript">
     var spec1 = "https://ctra0024.github.io/FIT3179/overview.json";
-    vegaEmbed('#vis1', spec1, {"actions": false}).then(function(result) {
+    vegaEmbed('#vis1', spec1).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
     
