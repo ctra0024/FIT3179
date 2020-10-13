@@ -38,12 +38,6 @@
     #vis1 {
       margin: auto;
     }
-    #vis2 {
-      margin: auto;
-    }
-    #vis3 {
-      margin: auto;
-    }
     #vis4 {
     }
     #vis5 {
@@ -116,20 +110,8 @@
     of Fatal Traffic Accidents
   </h3>
   
-  <!-- pure grid group -->
-    <div class="pure-g">
-        <div class="pure-u-1-3">
-          <div id="vis1" class="vis-container"></div>
-        </div>
-        <div class="pure-u-1-3">
-          <div id="vis2" class="vis-container"></div>
-        </div>
-        <div class="pure-u-1-3">
-          <div id="vis3" class="vis-container"></div>
-        </div>
-    </div>
-    <!-- end pure grid group -->
-  
+  <div id="vis1" class="vis-container"></div>
+ 
   <div class = "text">
     <p>There was an overall decrease in the number of fatal traffic accidents from 2014 to 2019, however the number of fatal traffic accidents by gender
     </p>
@@ -162,7 +144,7 @@
   
   
   <script type="text/javascript">
-    var spec1 = "https://ctra0024.github.io/FIT3179/overview_num_accidents.json";
+    var spec1 = "https://ctra0024.github.io/FIT3179/overview.json";
     vegaEmbed('#vis1', spec1).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
