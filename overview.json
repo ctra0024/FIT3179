@@ -1364,6 +1364,7 @@
   },
   "hconcat": [
     {
+      "width": 250,
       "mark": "bar",
       "encoding": {
         "x": {
@@ -1379,7 +1380,7 @@
           "title": "Number of Accidents",
           "axis": {"titleFontSize": 13, "labelFontSize": 13}
         },
-        "color": {"value": "#961111"}
+        "color": {"value": "#591528"}
       }
     },
     {
@@ -1389,7 +1390,8 @@
           "timeUnit": "year",
           "field": "Accident Date",
           "type": "temporal",
-          "title": "Year"
+          "title": "Year",
+          "header": {"labelFontSize": 13, "titleFontSize": 13}
         },
         "x": {
           "field": "Gender",
@@ -1408,30 +1410,28 @@
       }
     },
     {
+      "width": 250,
       "mark": "line",
       "encoding": {
-        "x": {
-          "field": "Accident Date",
-          "timeUnit": "year",
-          "type": "temporal",
-          "axis": {"titleFontSize": 13, "labelFontSize": 13}
-        },
-        "y": {
-          "aggregate": "count",
-          "field": "Accident Date",
-          "title": "Number of Accidents",
-          "axis": {"titleFontSize": 13, "labelFontSize": 13}
-        },
-        "color": {
-          "field": "Gender",
-          "scale": {"range": ["#961111", "#db8721"]},
-          "legend": {
-            "titleFontSize": 13,
-            "labelFontSize": 13
-          }
-        }
+      "x": {
+        "field": "Accident Date",
+        "timeUnit": "year",
+        "type": "temporal",
+        "axis": {"titleFontSize": 13, "labelFontSize": 13, "labelAlign": "center"}
+      },
+      "y": {
+        "aggregate": "count",
+        "field": "Accident Date",
+        "title": "Number of Accidents",
+        "axis": {"titleFontSize": 13, "labelFontSize": 13}
+      },
+      "color": {
+        "field": "Gender",
+        "scale": {"range": ["#961111", "#db8721"]},
+        "legend": {"titleFontSize": 13, "labelFontSize": 13, "symbolSize": 150}
       }
     }
+  }
   ],
   "config": {"background": "#f2f2f2"}
 }
