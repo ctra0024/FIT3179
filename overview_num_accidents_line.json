@@ -1362,7 +1362,7 @@
       {"Accident Date": 1490000000000, "Gender": "Male", "Age": 38}
     ]
   },
-  "width": 350,
+  "width": 250,
   "height": 265,
   "mark": "line",
   "encoding": {
