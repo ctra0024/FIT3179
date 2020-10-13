@@ -34,9 +34,9 @@
     }
     #vis1 {
     }
-    #vis2 {
+    #vis4 {
     }
-    #vis3 {
+    #vis5 {
     }
     .text {
       margin-top: 15px;
@@ -106,7 +106,20 @@
     of Fatal Traffic Accidents
   </h3>
   
-  <div id="vis1"></div>
+  <!-- pure grid group -->
+    <div class="pure-g">
+        <div class="pure-u-1-3">
+          <div id="vis1"></div>
+        </div>
+        <div class="pure-u-2-3">
+          <div id="vis2"></div>
+        </div>
+        <div class="pure-u-3-3">
+          <div id="vis3"></div>
+        </div>
+    </div>
+    <!-- end pure grid group -->
+  
   <div class = "text">
     <p>There was an overall decrease in the number of fatal traffic accidents from 2014 to 2019, however the number of fatal traffic accidents by gender
     </p>
@@ -128,29 +141,39 @@
     by Victim Road User Types
   </h3>
   
-  <div id="vis2"></div>
+  <div id="vis4"></div>
   
   <h3>
     <span class="mainkeyword">Average Ages</span>
     of Fatal Traffic Accidents by Gender
   </h3>
   
-  <div id="vis3"></div>
+  <div id="vis5"></div>
   
   
   <script type="text/javascript">
-    var spec1 = "https://ctra0024.github.io/FIT3179/overview.json";
+    var spec1 = "https://ctra0024.github.io/FIT3179/overview_num_accidents.json";
     vegaEmbed('#vis1', spec1).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
     
-    var spec2 = "https://ctra0024.github.io/FIT3179/accident-types.json";
+    var spec2 = "https://ctra0024.github.io/FIT3179/overview_num_accidents_gender.json";
     vegaEmbed('#vis2', spec2).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
     
-    var spec3 = "https://ctra0024.github.io/FIT3179/average-age-by-gender.json";
+    var spec3 = "https://ctra0024.github.io/FIT3179/overview_num_accidents_line.json";
     vegaEmbed('#vis3', spec3).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    
+    var spec4 = "https://ctra0024.github.io/FIT3179/accident-types.json";
+    vegaEmbed('#vis4', spec4).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    
+    var spec5 = "https://ctra0024.github.io/FIT3179/average-age-by-gender.json";
+    vegaEmbed('#vis5', spec5).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
   </script>
