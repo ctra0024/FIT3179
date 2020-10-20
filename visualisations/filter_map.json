@@ -2,7 +2,6 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 800,
   "height": 600,
-  "title": "Geographic distribution of all 1358 Fatal Accidents Occuring Between 2014 and 2019",
   "params": [
     {
       "name": "pc_above",
@@ -30,17 +29,17 @@
         "format": {"type": "topojson", "feature": "victoria"}
       },
       "transform": [
-        {
-          "lookup": "properties.vic_lga__3",
-          "from": {
-            "data": {
-              "url": "https://raw.githubusercontent.com/ctra0024/FIT3179/main/data/map_data_github.csv"
-            },
-            "key": "lga_name",
-            "fields": ["pc_of_total_accidents"]
-          }
-        },
-        {"filter": "datum.pc_of_total_accidents > pc_above"}
+      {
+        "lookup": "properties.vic_lga__3",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/ctra0024/FIT3179/main/data/map_data_github.csv"
+          },
+          "key": "lga_name",
+          "fields": ["pc_of_total_accidents"]
+        }
+      },
+      {"filter": "datum.pc_of_total_accidents > pc_above"}
       ],
       "mark": {"type": "geoshape", "stroke": "white"},
       "encoding": {
@@ -48,7 +47,12 @@
           "field": "pc_of_total_accidents",
           "type": "quantitative",
           "scale": {"scheme": "browns"},
-          "title": "% of Total Fatal Accidents"
+          "title": "% of Total Fatal Accidents",
+          "legend": {
+            "titleFontSize": 13,
+            "labelFontSize": 13,
+            "symbolSize": 150
+          }
         },
         "tooltip": [
           {
