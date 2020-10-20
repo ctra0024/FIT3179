@@ -125,6 +125,12 @@
   
   <div id="vis3" class="vis-container"></div>
   
+  <h3>
+    <span class="mainkeyword">Local Government Area</span>
+    % Contribution to Total Fatal Traffic Accidents
+  </h3>
+  
+  <div id="vis4" class="vis-container"></div>
   
   <script type="text/javascript">
     var spec1 = "https://ctra0024.github.io/FIT3179/visualisations/overview.json";
@@ -139,6 +145,11 @@
     
     var spec3 = "https://ctra0024.github.io/FIT3179/visualisations/average-age-by-gender.json";
     vegaEmbed('#vis3', spec3).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    
+    var spec4 = "https://ctra0024.github.io/FIT3179/visualisations/filter_map.json";
+    vegaEmbed('#vis4', spec4).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
   </script>
