@@ -1370,19 +1370,44 @@
           "timeUnit": "year",
           "field": "Accident Date",
           "type": "temporal",
-          "title": "Year"
+          "title": "Year",
+          "header": {"labelFontSize": 13, "titleFontSize": 13}
         },
-        "x": {"field": "Gender", "axis": {"title": ""}},
-        "y": {"aggregate": "average", "field": "Age", "title": "Average Age"},
-        "color": {"field": "Gender", "scale": {"range": ["#961111", "#db8721"]}}
+        "x": {
+          "field": "Gender",
+          "axis": {"titleFontSize": 13, "labelFontSize": 13, "title": ""}},
+        "y": {
+          "aggregate": "average",
+          "field": "Age",
+          "title": "Average Age",
+          "axis": {"titleFontSize": 13, "labelFontSize": 13, "title": ""}
+          },
+        "color": {
+          "field": "Gender",
+          "scale": {"range": ["#961111", "#db8721"]},
+          "legend": {
+            "titleFontSize": 13,
+            "labelFontSize": 13,
+            "symbolSize": 150
+          }
+        }
       }
     },
     {
       "width": 300,
       "mark": "line",
       "encoding": {
-        "x": {"field": "Accident Date", "timeUnit": "year", "type": "temporal"},
-        "y": {"aggregate": "average", "field": "Age"},
+        "x": {
+          "field": "Accident Date",
+          "timeUnit": "year",
+          "type": "temporal",
+          "axis": {"titleFontSize": 13, "labelFontSize": 13, "title": ""}
+        },
+        "y": {
+          "aggregate": "average",
+          "field": "Age",
+          "axis": {"titleFontSize": 13, "labelFontSize": 13, "title": ""}
+        },
         "color": {"field": "Gender", "scale": {"range": ["#961111", "#db8721"]}}
       }
     }
