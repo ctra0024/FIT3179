@@ -11,19 +11,37 @@
       "field": "accident_type_desc",
       "type": "nominal",
       "title": "Accident Type",
-      "axis": {"titleFontSize": 13, "labelFontSize": 12}
+      "axis": {
+        "titleFontSize": 14,
+        "labelFontSize": 12
+      }
     },
     "x": {
       "aggregate": "count",
       "field": "accident_date",
       "type": "quantitative",
       "stack": "normalize",
-      "axis": {"format": "%", "titleFontSize": 13, "labelFontSize": 13},
+      "axis": {
+        "format": "%",
+        "titleFontSize": 14,
+        "labelFontSize": 13
+      },
       "title": "Normalised % of All Accidents Between 2014 and 2019"
+    },
+    "tooltip": {
+      "field": "accident_date",
+      "aggregate": "count",
+      "title": "Count of Accidents"
     },
     "color": {
       "field": "road_user_type_desc",
       "type": "nominal",
+      "condition": {
+        "selection": "hover",
+        "field":"road_user_type_desc",
+        "type":"nominal",
+        "legend": null
+      },
       "scale": {
         "domain": [
           "Bicyclists",
@@ -43,8 +61,30 @@
         ]
       },
       "title": "Victim Road User Type",
-      "legend": {"orient": "top", "titleFontSize": 13, "labelFontSize": 13}
+      "legend": {
+        "orient": "top",
+        "titleFontSize": 14,
+        "labelFontSize": 13
+      }
+    },
+    "opacity": {
+      "condition": {
+        "selection": "hover",
+        "value": 1
+      },
+      "value": 0.2
     }
   },
-  "config": {"background": "#f2f2f2"}
+  "selection": {
+      "hover": {
+        "type": "single",
+        "on": "mouseover",
+        "empty": "all",
+        "fields": ["road_user_type_desc"]
+      }
+    },
+  "config": {
+    "background": "#f2f2f2",
+    "style": {"cell": {"stroke": "transparent"}}
+    }
 }
