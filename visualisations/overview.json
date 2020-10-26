@@ -1375,8 +1375,6 @@
           "axis": {
             "titleFontSize": 14,
             "labelFontSize": 13,
-            "labelColor": "aliceblue",
-            "titleColor": "aliceblue",
             "grid": false
           }
         },
@@ -1386,9 +1384,7 @@
           "title": "Number of Accidents",
           "axis": {
             "titleFontSize": 14,
-            "labelFontSize": 13,
-            "labelColor": "aliceblue",
-            "titleColor": "aliceblue"
+            "labelFontSize": 13
           }
         },
         "color": {"value": "#591528"},
@@ -1418,18 +1414,14 @@
           "title": "Year",
           "header": {
             "labelFontSize": 13,
-            "titleFontSize": 14,
-            "labelColor": "aliceblue",
-            "titleColor": "aliceblue"
+            "titleFontSize": 14
           }
         },
         "x": {
           "field": "Gender",
           "axis": {
             "title": "",
-            "labelFontSize": 12,
-            "labelColor": "aliceblue",
-            "titleColor": "aliceblue"
+            "labelFontSize": 12
           }
         },
         "y": {
@@ -1438,9 +1430,7 @@
           "title": "Number of Accidents",
           "axis": {
             "titleFontSize": 14,
-            "labelFontSize": 13,
-            "labelColor": "aliceblue",
-            "titleColor": "aliceblue"
+            "labelFontSize": 13
           }
         },
         "color": {
@@ -1462,8 +1452,6 @@
             "titleFontSize": 14,
             "labelFontSize": 13,
             "labelAlign": "center",
-            "labelColor": "aliceblue",
-            "titleColor": "aliceblue",
             "grid": false
           }
         },
@@ -1473,9 +1461,7 @@
           "title": "Number of Accidents",
           "axis": {
             "titleFontSize": 14,
-            "labelFontSize": 13,
-            "labelColor": "aliceblue",
-            "titleColor": "aliceblue"
+            "labelFontSize": 13
           }
         },
         "color": {
@@ -1484,13 +1470,11 @@
           "legend": {
             "titleFontSize": 14,
             "labelFontSize": 13,
-            "symbolSize": 200,
-            "labelColor": "aliceblue",
-            "titleColor": "aliceblue"
+            "symbolSize": 200
           }
         }
       }
     }
   ],
-  "config": {"background": "#211f1f"}
+  "config": {"background": "#f2f2f2"}
 }

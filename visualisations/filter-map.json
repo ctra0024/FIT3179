@@ -21,7 +21,7 @@
         "url": "https://raw.githubusercontent.com/ctra0024/FIT3179/main/data/victoria.json",
         "format": {"type": "topojson", "feature": "victoria"}
       },
-      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
+      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "aliceblue"}
     },
     {
       "data": {
@@ -51,9 +51,7 @@
           "legend": {
             "titleFontSize": 13,
             "labelFontSize": 13,
-            "symbolSize": 150,
-            "titleColor": "aliceblue",
-            "labelColor": "aliceblue"
+            "symbolSize": 150
           }
         },
         "tooltip": [
@@ -72,5 +70,5 @@
       }
     }
   ],
-  "config": {"background": "#211f1f"}
+  "config": {"background": "#f2f2f2"}
 }

@@ -1374,9 +1374,7 @@
           "title": "Year",
           "header": {
             "labelFontSize": 13,
-            "titleFontSize": 13,
-            "labelColor": "aliceblue",
-            "titleColor": "aliceblue"
+            "titleFontSize": 13
           }
         },
         "x": {
@@ -1384,9 +1382,7 @@
           "axis": {
             "titleFontSize": 13,
             "labelFontSize": 13,
-            "title": "",
-            "labelColor": "aliceblue",
-            "titleColor": "aliceblue"
+            "title": ""
           }
         },
         "y": {
@@ -1396,9 +1392,7 @@
           "axis": {
             "titleFontSize": 13,
             "labelFontSize": 13,
-            "title": "",
-            "labelColor": "aliceblue",
-            "titleColor": "aliceblue"
+            "title": ""
           }
         },
         "color": {
@@ -1407,9 +1401,7 @@
           "legend": {
             "titleFontSize": 13,
             "labelFontSize": 13,
-            "symbolSize": 150,
-            "labelColor": "aliceblue",
-            "titleColor": "aliceblue"
+            "symbolSize": 150
           }
         }
       }
@@ -1426,8 +1418,6 @@
             "titleFontSize": 13,
             "labelFontSize": 13,
             "title": "",
-            "labelColor": "aliceblue",
-            "titleColor": "aliceblue",
             "grid": false
           }
         },
@@ -1437,14 +1427,12 @@
           "axis": {
             "titleFontSize": 13,
             "labelFontSize": 13,
-            "title": "",
-            "labelColor": "aliceblue",
-            "titleColor": "aliceblue"
+            "title": ""
           }
         },
         "color": {"field": "Gender", "scale": {"range": ["#961111", "#db8721"]}}
       }
     }
   ],
-  "config": {"background": "#211f1f"}
+  "config": {"background": "#f2f2f2"}
 }

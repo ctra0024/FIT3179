@@ -13,9 +13,7 @@
       "title": "Accident Type",
       "axis": {
         "titleFontSize": 14,
-        "labelFontSize": 12,
-        "labelColor": "aliceblue",
-        "titleColor": "aliceblue"
+        "labelFontSize": 12
       }
     },
     "x": {
@@ -27,8 +25,6 @@
         "format": "%",
         "titleFontSize": 14,
         "labelFontSize": 13,
-        "labelColor": "aliceblue",
-        "titleColor": "aliceblue",
         "gridColor": "darkgray"
       },
       "title": "Normalised % of All Accidents Between 2014 and 2019"
@@ -62,7 +58,7 @@
           "#800020",
           "#4f070c",
           "#f5ce20",
-          "white"
+          "#260303"
         ]
       },
       "title": "Victim Road User Type",
@@ -70,8 +66,6 @@
         "orient": "top",
         "titleFontSize": 14,
         "labelFontSize": 13,
-        "labelColor": "aliceblue",
-        "titleColor": "aliceblue",
         "symbolSize": 250
       }
     },
@@ -86,7 +80,7 @@
     }
   },
   "config": {
-    "background": "#211f1f",
+    "background": "#f2f2f2",
     "style": {"cell": {"stroke": "transparent"}}
   }
 }
