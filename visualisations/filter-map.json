@@ -52,7 +52,6 @@
             "titleFontSize": 13,
             "labelFontSize": 13,
             "symbolSize": 150,
-            "offset": 100,
             "titleColor": "aliceblue",
             "labelColor": "aliceblue"
           }
