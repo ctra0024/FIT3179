@@ -1371,24 +1371,44 @@
           "field": "Accident Date",
           "type": "temporal",
           "title": "Year",
-          "header": {"labelFontSize": 13, "titleFontSize": 13}
+          "header": {
+            "labelFontSize": 13,
+            "titleFontSize": 13,
+            "labelColor": "aliceblue",
+            "titleColor": "aliceblue"
+          }
         },
         "x": {
           "field": "Gender",
-          "axis": {"titleFontSize": 13, "labelFontSize": 13, "title": ""}},
+          "axis": {
+            "titleFontSize": 13,
+            "labelFontSize": 13,
+            "title": "",
+            "labelColor": "aliceblue",
+            "titleColor": "aliceblue"
+          }
+        },
         "y": {
           "aggregate": "average",
           "field": "Age",
           "title": "Average Age",
-          "axis": {"titleFontSize": 13, "labelFontSize": 13, "title": ""}
-          },
+          "axis": {
+            "titleFontSize": 13,
+            "labelFontSize": 13,
+            "title": "",
+            "labelColor": "aliceblue",
+            "titleColor": "aliceblue"
+          }
+        },
         "color": {
           "field": "Gender",
           "scale": {"range": ["#961111", "#db8721"]},
           "legend": {
             "titleFontSize": 13,
             "labelFontSize": 13,
-            "symbolSize": 150
+            "symbolSize": 150,
+            "labelColor": "aliceblue",
+            "titleColor": "aliceblue"
           }
         }
       }
@@ -1401,16 +1421,29 @@
           "field": "Accident Date",
           "timeUnit": "year",
           "type": "temporal",
-          "axis": {"titleFontSize": 13, "labelFontSize": 13, "title": ""}
+          "axis": {
+            "titleFontSize": 13,
+            "labelFontSize": 13,
+            "title": "",
+            "labelColor": "aliceblue",
+            "titleColor": "aliceblue",
+            "grid": false
+          }
         },
         "y": {
           "aggregate": "average",
           "field": "Age",
-          "axis": {"titleFontSize": 13, "labelFontSize": 13, "title": ""}
+          "axis": {
+            "titleFontSize": 13,
+            "labelFontSize": 13,
+            "title": "",
+            "labelColor": "aliceblue",
+            "titleColor": "aliceblue"
+          }
         },
         "color": {"field": "Gender", "scale": {"range": ["#961111", "#db8721"]}}
       }
     }
   ],
-  "config": {"background": "#f2f2f2"}
+  "config": {"background": "#211f1f"}
 }

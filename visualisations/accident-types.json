@@ -13,7 +13,9 @@
       "title": "Accident Type",
       "axis": {
         "titleFontSize": 14,
-        "labelFontSize": 12
+        "labelFontSize": 12,
+        "labelColor": "aliceblue",
+        "titleColor": "aliceblue"
       }
     },
     "x": {
@@ -24,7 +26,10 @@
       "axis": {
         "format": "%",
         "titleFontSize": 14,
-        "labelFontSize": 13
+        "labelFontSize": 13,
+        "labelColor": "aliceblue",
+        "titleColor": "aliceblue",
+        "gridColor": "darkgray"
       },
       "title": "Normalised % of All Accidents Between 2014 and 2019"
     },
@@ -38,8 +43,8 @@
       "type": "nominal",
       "condition": {
         "selection": "hover",
-        "field":"road_user_type_desc",
-        "type":"nominal",
+        "field": "road_user_type_desc",
+        "type": "nominal",
         "legend": null
       },
       "scale": {
@@ -55,36 +60,33 @@
           "#ed5353",
           "#cc7614",
           "#800020",
-          "#9c1a1a",
+          "#4f070c",
           "#f5ce20",
-          "#402121"
+          "white"
         ]
       },
       "title": "Victim Road User Type",
       "legend": {
         "orient": "top",
         "titleFontSize": 14,
-        "labelFontSize": 13
+        "labelFontSize": 13,
+        "labelColor": "aliceblue",
+        "titleColor": "aliceblue",
+        "symbolSize": 250
       }
     },
-    "opacity": {
-      "condition": {
-        "selection": "hover",
-        "value": 1
-      },
-      "value": 0.35
-    }
+    "opacity": {"condition": {"selection": "hover", "value": 1}, "value": 0.2}
   },
   "selection": {
-      "hover": {
-        "type": "single",
-        "on": "mouseover",
-        "empty": "all",
-        "fields": ["road_user_type_desc"]
-      }
-    },
-  "config": {
-    "background": "#f2f2f2",
-    "style": {"cell": {"stroke": "transparent"}}
+    "hover": {
+      "type": "single",
+      "on": "mouseover",
+      "empty": "all",
+      "fields": ["road_user_type_desc"]
     }
+  },
+  "config": {
+    "background": "#211f1f",
+    "style": {"cell": {"stroke": "transparent"}}
+  }
 }
