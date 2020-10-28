@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/ctra0024/FIT3179/main/data/fatal_accidents.csv"
   },
-  "width": 940,
+  "width": 930,
   "height": 400,
   "mark": "bar",
   "encoding": {
@@ -54,10 +54,10 @@
         "range": [
           "#B64E4E",
           "#DA7C18",
-          "#803C09",
-          "#7C0101",
+          "#bd1e1e",
+          "#7a0101",
           "#DFB708",
-          "#260303"
+          "#000000"
         ]
       },
       "title": "Victim Road User Type",
