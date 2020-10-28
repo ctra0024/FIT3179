@@ -28,9 +28,9 @@
     },
     "tooltip": [
       {
-      "field": "accident_date",
-      "aggregate": "count",
-      "title": "Number of Accidents"
+        "field": "accident_date",
+        "aggregate": "count",
+        "title": "Number of Accidents"
       }
     ],
     "color": {
@@ -52,10 +52,10 @@
           "Pillion Passengers"
         ],
         "range": [
-          "#B64E4E",
+          "#82390a",
           "#DA7C18",
-          "#bd1e1e",
-          "#7a0101",
+          "#c41b1b",
+          "#d45d5d",
           "#DFB708",
           "#000000"
         ]
@@ -65,7 +65,7 @@
         "orient": "top",
         "titleFontSize": 14,
         "labelFontSize": 13,
-        "symbolSize": 250
+        "symbolSize": 300
       }
     },
     "opacity": {"condition": {"selection": "hover", "value": 1}, "value": 0.2}
