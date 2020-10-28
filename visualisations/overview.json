@@ -1370,7 +1370,7 @@
       "field": "Accident Date",
       "timeUnit": "yearmonth",
       "axis": {
-        "titleFontSize": 13,
+        "titleFontSize": 14,
         "labelFontSize": 13,
         "grid": false
       }
@@ -1379,13 +1379,13 @@
       "aggregate": "count",
       "field": "Accident Date",
       "title": "Count of Accidents",
-      "axis": {"titleFontSize": 13, "labelFontSize": 13}
+      "axis": {"titleFontSize": 14, "labelFontSize": 13}
     },
     "color": {
       "field": "Gender",
       "scale": {"range": ["#471020", "#7d0023"]},
       "legend": {
-        "titleFontSize": 13,
+        "titleFontSize": 14,
         "labelFontSize": 13,
         "symbolSize": 300,
         "symbolType": "square"
