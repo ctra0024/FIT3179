@@ -1362,119 +1362,45 @@
       {"Accident Date": 1490000000000, "Gender": "Male", "Age": 38}
     ]
   },
-  "hconcat": [
-    {
-      "width": 250,
-      "mark": "bar",
-      "encoding": {
-        "x": {
-          "field": "Accident Date",
-          "type": "temporal",
-          "timeUnit": "year",
-          "title": "Year",
-          "axis": {
-            "titleFontSize": 14,
-            "labelFontSize": 13,
-            "grid": false
-          }
-        },
-        "y": {
-          "aggregate": "count",
-          "field": "Accident Date",
-          "title": "Number of Accidents",
-          "axis": {
-            "titleFontSize": 14,
-            "labelFontSize": 13
-          }
-        },
-        "color": {"value": "#591528"},
-        "opacity": {
-          "condition": {"selection": "hover", "value": 1},
-          "value": 0.6
-        },
-        "tooltip": {"field": "Accident Date", "aggregate": "count"}
-      },
-      "selection": {
-        "hover": {
-          "type": "single",
-          "on": "mouseover",
-          "empty": "all",
-          "field": "Accident Date",
-          "aggregate": "count"
-        }
+  "width": 700,
+  "height": 400,
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "field": "Accident Date",
+      "timeUnit": "yearmonth",
+      "axis": {
+        "titleFontSize": 13,
+        "labelFontSize": 13,
+        "grid": false
       }
     },
-    {
-      "mark": "bar",
-      "encoding": {
-        "column": {
-          "timeUnit": "year",
-          "field": "Accident Date",
-          "type": "temporal",
-          "title": "Year",
-          "header": {
-            "labelFontSize": 13,
-            "titleFontSize": 14
-          }
-        },
-        "x": {
-          "field": "Gender",
-          "axis": {
-            "title": "",
-            "labelFontSize": 12
-          }
-        },
-        "y": {
-          "aggregate": "count",
-          "field": "Accident Date",
-          "title": "Number of Accidents",
-          "axis": {
-            "titleFontSize": 14,
-            "labelFontSize": 13
-          }
-        },
-        "color": {
-          "field": "Gender",
-          "scale": {"range": ["#961111", "#db8721"]}
-        },
-        "tooltip": {"field": "Accident Date", "aggregate": "count"}
+    "y": {
+      "aggregate": "count",
+      "field": "Accident Date",
+      "title": "Count of Accidents",
+      "axis": {"titleFontSize": 13, "labelFontSize": 13}
+    },
+    "color": {
+      "field": "Gender",
+      "scale": {"range": ["#471020", "#7d0023"]},
+      "legend": {
+        "titleFontSize": 13,
+        "labelFontSize": 13,
+        "symbolSize": 300,
+        "symbolType": "square"
       }
     },
-    {
-      "width": 250,
-      "mark": "line",
-      "encoding": {
-        "x": {
-          "field": "Accident Date",
-          "timeUnit": "year",
-          "type": "temporal",
-          "axis": {
-            "titleFontSize": 14,
-            "labelFontSize": 13,
-            "labelAlign": "center",
-            "grid": false
-          }
-        },
-        "y": {
-          "aggregate": "count",
-          "field": "Accident Date",
-          "title": "Number of Accidents",
-          "axis": {
-            "titleFontSize": 14,
-            "labelFontSize": 13
-          }
-        },
-        "color": {
-          "field": "Gender",
-          "scale": {"range": ["#961111", "#db8721"]},
-          "legend": {
-            "titleFontSize": 14,
-            "labelFontSize": 13,
-            "symbolSize": 200
-          }
-        }
-      }
+    "opacity": {
+      "condition": {"selection": "hover", "value": 1},
+      "value": 0.6
     }
-  ],
-  "config": {"background": "#f2f2f2"}
+  },
+  "selection": {
+    "hover": {
+      "type": "single",
+      "on": "mouseover"
+    }
+  },
+   "config": {"background": "#f2f2f2"}
 }
