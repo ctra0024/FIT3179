@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/ctra0024/FIT3179/main/data/fatal_accidents.csv"
   },
-  "width": 650,
+  "width": 850,
   "height": 400,
   "mark": "bar",
   "encoding": {
@@ -11,10 +11,7 @@
       "field": "accident_type_desc",
       "type": "nominal",
       "title": "Accident Type",
-      "axis": {
-        "titleFontSize": 14,
-        "labelFontSize": 12
-      }
+      "axis": {"titleFontSize": 14, "labelFontSize": 12}
     },
     "x": {
       "aggregate": "count",
@@ -29,11 +26,13 @@
       },
       "title": "Normalised % of All Accidents Between 2014 and 2019"
     },
-    "tooltip": {
+    "tooltip": [
+      {
       "field": "accident_date",
       "aggregate": "count",
-      "title": "Count of Accidents"
-    },
+      "title": "Number of Accidents"
+      }
+    ],
     "color": {
       "field": "road_user_type_desc",
       "type": "nominal",
@@ -53,11 +52,11 @@
           "Pillion Passengers"
         ],
         "range": [
-          "#ed5353",
-          "#cc7614",
-          "#800020",
-          "#4f070c",
-          "#f5ce20",
+          "#B64E4E",
+          "#DA7C18",
+          "#803C09",
+          "#7C0101",
+          "#DFB708",
           "#260303"
         ]
       },
