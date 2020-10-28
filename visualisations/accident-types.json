@@ -68,7 +68,7 @@
         "symbolSize": 300
       }
     },
-    "opacity": {"condition": {"selection": "hover", "value": 1}, "value": 0.2}
+    "opacity": {"condition": {"selection": "hover", "value": 1}, "value": 0.3}
   },
   "selection": {
     "hover": {
