@@ -1362,67 +1362,52 @@
       {"Accident Date": 1490000000000, "Gender": "Male", "Age": 38}
     ]
   },
-  "hconcat": [
-    {
-      "width": 45,
-      "mark": "bar",
-      "encoding": {
-        "column": {
-          "timeUnit": "year",
-          "field": "Accident Date",
-          "type": "temporal",
-          "title": "Year",
-          "header": {"labelFontSize": 13, "titleFontSize": 13}
-        },
-        "x": {
-          "field": "Gender",
-          "axis": {"titleFontSize": 13, "labelFontSize": 13, "title": ""}
-        },
-        "y": {
-          "aggregate": "average",
-          "field": "Age",
-          "title": "Average Age",
-          "axis": {"titleFontSize": 13, "labelFontSize": 13, "title": ""}
-        },
-        "color": {
-          "field": "Gender",
-          "scale": {"range": ["#961111", "#db8721"]},
-          "legend": {
-            "titleFontSize": 13,
-            "labelFontSize": 13,
-            "symbolSize": 150
-          }
-        },
-        "tooltip": {
-          "field": "Age",
-          "aggregate": "average",
-          "format": ".2f"
-        }
+  "width": 150,
+  "height": 400,
+  "mark": "bar",
+  "encoding": {
+    "column": {
+      "timeUnit": "year",
+      "field": "Accident Date",
+      "type": "temporal",
+      "title": "Year",
+      "header": {"labelFontSize": 13, "titleFontSize": 14}
+    },
+    "x": {
+      "field": "Gender",
+      "axis": {"titleFontSize": 14, "labelFontSize": 13, "title": ""}
+    },
+    "y": {
+      "aggregate": "average",
+      "field": "Age",
+      "title": "Average Age",
+      "axis": {"titleFontSize": 14, "labelFontSize": 13}
+    },
+    "color": {
+      "field": "Gender",
+      "scale": {"range": ["#961111", "#db8721"]},
+      "legend": {
+        "titleFontSize": 14,
+        "labelFontSize": 13,
+        "symbolSize": 150
       }
     },
-    {
-      "width": 330,
-      "mark": "line",
-      "encoding": {
-        "x": {
-          "field": "Accident Date",
-          "timeUnit": "year",
-          "type": "temporal",
-          "axis": {
-            "titleFontSize": 13,
-            "labelFontSize": 13,
-            "title": "",
-            "grid": false
-          }
-        },
-        "y": {
-          "aggregate": "average",
-          "field": "Age",
-          "axis": {"titleFontSize": 13, "labelFontSize": 13, "title": ""}
-        },
-        "color": {"field": "Gender", "scale": {"range": ["#961111", "#db8721"]}}
-      }
+    "opacity": {
+      "condition": {"selection": "hover", "value": 1},
+      "value": 0.6
+    },
+    "tooltip": [{
+      "field": "Age",
+      "aggregate": "average",
+      "format": ".2f",
+      "title": "Average Age"
+    }]
+  },
+  "selection": {
+    "hover": {
+      "type": "single",
+      "on": "mouseover"
     }
-  ],
+  },
   "config": {"background": "#f2f2f2"}
 }
