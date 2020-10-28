@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/ctra0024/FIT3179/main/data/fatal_accidents.csv"
   },
-  "width": 850,
+  "width": 700,
   "height": 400,
   "mark": "bar",
   "encoding": {
