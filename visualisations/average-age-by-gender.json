@@ -1372,28 +1372,17 @@
           "field": "Accident Date",
           "type": "temporal",
           "title": "Year",
-          "header": {
-            "labelFontSize": 13,
-            "titleFontSize": 13
-          }
+          "header": {"labelFontSize": 13, "titleFontSize": 13}
         },
         "x": {
           "field": "Gender",
-          "axis": {
-            "titleFontSize": 13,
-            "labelFontSize": 13,
-            "title": ""
-          }
+          "axis": {"titleFontSize": 13, "labelFontSize": 13, "title": ""}
         },
         "y": {
           "aggregate": "average",
           "field": "Age",
           "title": "Average Age",
-          "axis": {
-            "titleFontSize": 13,
-            "labelFontSize": 13,
-            "title": ""
-          }
+          "axis": {"titleFontSize": 13, "labelFontSize": 13, "title": ""}
         },
         "color": {
           "field": "Gender",
@@ -1403,6 +1392,11 @@
             "labelFontSize": 13,
             "symbolSize": 150
           }
+        },
+        "tooltip": {
+          "field": "Age",
+          "aggregate": "average",
+          "format": ".2f"
         }
       }
     },
@@ -1424,11 +1418,7 @@
         "y": {
           "aggregate": "average",
           "field": "Age",
-          "axis": {
-            "titleFontSize": 13,
-            "labelFontSize": 13,
-            "title": ""
-          }
+          "axis": {"titleFontSize": 13, "labelFontSize": 13, "title": ""}
         },
         "color": {"field": "Gender", "scale": {"range": ["#961111", "#db8721"]}}
       }
