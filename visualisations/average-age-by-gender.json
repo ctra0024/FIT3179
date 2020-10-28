@@ -1362,7 +1362,7 @@
       {"Accident Date": 1490000000000, "Gender": "Male", "Age": 38}
     ]
   },
-  "width": 125,
+  "width": 123,
   "height": 400,
   "mark": "bar",
   "encoding": {
@@ -1386,28 +1386,18 @@
     "color": {
       "field": "Gender",
       "scale": {"range": ["#961111", "#db8721"]},
-      "legend": {
-        "titleFontSize": 14,
-        "labelFontSize": 13,
-        "symbolSize": 150
+      "legend": {"titleFontSize": 14, "labelFontSize": 13, "symbolSize": 300}
+    },
+    "opacity": {"condition": {"selection": "hover", "value": 1}, "value": 0.3},
+    "tooltip": [
+      {
+        "field": "Age",
+        "aggregate": "average",
+        "format": ".2f",
+        "title": "Average Age"
       }
-    },
-    "opacity": {
-      "condition": {"selection": "hover", "value": 1},
-      "value": 0.3
-    },
-    "tooltip": [{
-      "field": "Age",
-      "aggregate": "average",
-      "format": ".2f",
-      "title": "Average Age"
-    }]
+    ]
   },
-  "selection": {
-    "hover": {
-      "type": "single",
-      "on": "mouseover"
-    }
-  },
+  "selection": {"hover": {"type": "single", "on": "mouseover"}},
   "config": {"background": "#f2f2f2"}
 }
