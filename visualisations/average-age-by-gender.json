@@ -1385,7 +1385,7 @@
     },
     "color": {
       "field": "Gender",
-      "scale": {"range": ["#961111", "#db8721"]},
+      "scale": {"range": ["#471020", "#7d0023"]},
       "legend": {"titleFontSize": 14, "labelFontSize": 13, "symbolSize": 300}
     },
     "opacity": {"condition": {"selection": "hover", "value": 1}, "value": 0.3},
