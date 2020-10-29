@@ -13,11 +13,14 @@
       "type": "nominal",
       "title": "Victim Road User Type",
       "legend": {
-        "orient": "top",
+        "orient": "none",
         "titleFontSize": 14,
         "labelFontSize": 13,
         "symbolSize": 300,
-        "symbolType": "square"
+        "symbolType": "square",
+        "legendX": 160,
+        "legendY": -90,
+        "direction": "horizontal"
       },
       "scale": {
         "domain": [
