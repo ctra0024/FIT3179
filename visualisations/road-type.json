@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ctra0024/FIT3179/main/data/fatal_accidents.csv"
+  },
+  "width": 750,
+  "height": 400,
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "road_type",
+      "type": "nominal",
+      "title": "Accident Road Type",
+      "axis": {"titleFontSize": 14, "labelFontSize": 12}
+    },
+    "x": {
+      "aggregate": "count",
+      "field": "accident_date",
+      "type": "quantitative",
+      "stack": "normalize",
+      "axis": {
+        "format": "%",
+        "titleFontSize": 14,
+        "labelFontSize": 13,
+        "gridColor": "darkgray"
+      },
+      "title": "Normalised % of All Accidents Between 2014 and 2019"
+    },
+    "tooltip": [
+      {
+        "field": "accident_date",
+        "aggregate": "count",
+        "title": "Number of Accidents"
+      }
+    ],
+    "color": {
+      "field": "road_user_type_desc",
+      "type": "nominal",
+      "condition": {
+        "selection": "hover",
+        "field": "road_user_type_desc",
+        "type": "nominal",
+        "legend": null
+      },
+      "scale": {
+        "domain": [
+          "Bicyclists",
+          "Drivers",
+          "Motorcyclists",
+          "Passengers",
+          "Pedestrians",
+          "Pillion Passengers"
+        ],
+        "range": [
+          "#82390a",
+          "#DA7C18",
+          "#ad1717",
+          "#d45d5d",
+          "#DFB708",
+          "#000000"
+        ]
+      },
+      "title": "Victim Road User Type",
+      "legend": {
+        "orient": "top",
+        "titleFontSize": 14,
+        "labelFontSize": 13,
+        "symbolSize": 300
+      }
+    },
+    "opacity": {"condition": {"selection": "hover", "value": 1}, "value": 0.3}
+  },
+  "selection": {
+    "hover": {
+      "type": "single",
+      "on": "mouseover",
+      "empty": "all",
+      "fields": ["road_user_type_desc"]
+    }
+  },
+  "config": {
+    "background": "#f2f2f2",
+    "style": {"cell": {"stroke": "transparent"}}
+  }
+}
